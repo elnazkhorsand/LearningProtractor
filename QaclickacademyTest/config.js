@@ -22,7 +22,11 @@ exports.config = {
 	},
 
 	// Here we put all the files(specs) which should be run.
-	specs : [ 'homeNameValidation.js' ],
+	specs : [
+		'homeNameValidation.js', 
+		'homeEmailValidation.js',
+		'studentEmploymentRBValidation.js'
+		],
 
 	// For adding colors to CMD reports.
 	jasminNodeOpts : {

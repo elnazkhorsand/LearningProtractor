@@ -1,5 +1,5 @@
 //This is the Test Suite.
-describe('TS - Home - Name Validation',function(){
+describe('TS-Home: Name Validation',function(){
 
 	var homeObj = require('./homePageObjectModel.js');
 	var setupObj = require('./setup.js');
@@ -11,7 +11,7 @@ describe('TS - Home - Name Validation',function(){
 	})
 	
 	//TestCase1: for checking the alert message when the Name is left empty.
-	it('TC1-If the Name is left empty',function(){
+	it('TC1: If the Name is left empty',function(){
 		
 		//Step1: is done in onPrepare()
 		//Step2: Click on the textbox 'Name'
@@ -26,7 +26,7 @@ describe('TS - Home - Name Validation',function(){
 	})
 
 	//TestCase2: for checking the alert message if the user enter a character and click somewhere else.
-	it('TC2-If Name has less than 2 characters by entering one character',function(){
+	it('TC2: If Name has less than 2 characters by entering one character',function(){
 		//Step1: is done in onPrepare()
 		//Step2-a: Click on the textbox 'Name'
 		homeObj.name.click();
@@ -42,7 +42,7 @@ describe('TS - Home - Name Validation',function(){
 	})
 
 	//TestCase3: for checking the alert message if the use reduce the characters to one by using Backspace.
-	it('TC3-If Name has less than 2 characters by using Backspace',function(){
+	it('TC3: If Name has less than 2 characters by using Backspace',function(){
 		//Step1: is done in onPrepare()
 		//Step2-a: Click on the textbox 'Name'
 		homeObj.name.click();
@@ -54,7 +54,7 @@ describe('TS - Home - Name Validation',function(){
 		browser.actions().mouseMove(homeObj.email.click()).perform();
 		
 		//Step4-a: Press Shift+Tab to go back to the 'Name'
-		browser.actions().sendKeys(protractor.Key.chord(protractor.Key.SHIFT, protractor.Key.TAB))
+		browser.actions().sendKeys(protractor.Key.chord(protractor.Key.SHIFT, protractor.Key.TAB));
 		
 		//Step4-b: Press BACKSPACE
 		homeObj.name.sendKeys(protractor.Key.BACK_SPACE);
@@ -66,7 +66,7 @@ describe('TS - Home - Name Validation',function(){
 	})
 
 	afterEach(function(){
-		console.log('Test is DONE!!!!')
+		console.log('Test is DONE!')
 	})
 	
 })

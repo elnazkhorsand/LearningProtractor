@@ -6,8 +6,8 @@ function homePage(){
 	this.icecreamCheckbox = element(by.id('exampleCheck1'));
 	this.genderMale = element(by.cssContainingText('select[id="exampleFormControlSelect1"] option','Male'));
 	this.genderFemale = element(by.cssContainingText('select[id="exampleFormControlSelect1"] option','Female'));
-	this.studentCheckbox = element(by.id('inlineRadio1'));
-	this.employedCheckbox = element(by.id('inlineRadio2'));
+	this.studentRadioButton = element(by.id('inlineRadio1'));
+	this.employedRadioButton = element(by.id('inlineRadio2'));
 	this.successMessage = element(by.css('div[class="alert alert-success alert-dismissible"]'));
 	this.emptyNameMessage = element(by.cssContainingText('div[class="alert alert-danger"]','Name is required'));
 	this.emptyEmailMessage = element(by.cssContainingText('div[class="alert alert-danger"]','Email is required'));
