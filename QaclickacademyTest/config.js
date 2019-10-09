@@ -17,7 +17,8 @@ exports.config = {
 
 		// For using the protractor's reporter.
 		jasmine.getEnv().addReporter(new Jasmine2HtmlReporter({
-			savePath : 'target/screenshots'
+			savePath : 'target/screenshots',
+			clearFoldersBeforeTest: true
 		}));
 	},
 
@@ -25,7 +26,8 @@ exports.config = {
 	specs : [
 		'homeNameValidation.js', 
 		'homeEmailValidation.js',
-		'studentEmploymentRBValidation.js'
+		'studentEmploymentRBValidation.js',
+		'homeFillingTheForm.js'
 		],
 
 	// For adding colors to CMD reports.
